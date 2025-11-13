@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://2n5cdnnv84e"]
+
+[ext_resource type="Script" uid="uid://byj0lfat48aiv" path="res://Scripts/character.gd" id="1_lkv7d"]
+[ext_resource type="Script" uid="uid://8qv2amn5n0jm" path="res://Scripts/camera_arm.gd" id="2_ushfy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_he2x2"]
+
+[node name="Character" type="CharacterBody3D"]
+script = ExtResource("1_lkv7d")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.00185, 0, 0, 0, 1.00185, 0, 0, 0, 1.00185, 0, 0, 0)
+shape = SubResource("BoxShape3D_he2x2")
+
+[node name="CameraArm" type="SpringArm3D" parent="."]
+collision_mask = 0
+spring_length = 6.0
+script = ExtResource("2_ushfy")
+
+[node name="Camera3D" type="Camera3D" parent="CameraArm"]
