@@ -1,37 +1,46 @@
 extends CharacterBody3D
 
+const AIR_RESISTANCE = 3
 
-const SPEED = 12.0
-const JUMP_STRENGTH = 8
-const AIR_RESISTANCE = 0.05
-
-const JUMP_VELOCITY = 4.5
-
+var power = 600
+var jumpStrength = 500
 var hasJumped: bool
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
-	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).rotated(Vector3.UP, $CameraArm.rotation.y)
-	if direction and not hasJumped:
-		velocity.x = direction.x *  SPEED
-		velocity.z = direction.z * SPEED
-		velocity.y = JUMP_STRENGTH
-		hasJumped = true
-		$Timer.start()
-	else:
-		velocity.x = move_toward(velocity.x, 0, AIR_RESISTANCE)
-		velocity.z = move_toward(velocity.z, 0, AIR_RESISTANCE)
-	
+		
+	velocity.x = move_toward(velocity.x, 0, AIR_RESISTANCE * delta)
+	velocity.z = move_toward(velocity.z, 0, AIR_RESISTANCE * delta)
+		
+	if  not hasJumped:
+		var direction
+		
+		if Input.is_action_just_pressed("move_forward"):
+			direction = Vector3(0, 0, -1).rotated(Vector3.UP, $CameraArm.rotation.y)
+			power = 600
+			jumpStrength = 500
+		elif Input.is_action_just_pressed("move_backward"):
+			direction = Vector3(0, 0, 1).rotated(Vector3.UP, $CameraArm.rotation.y)
+			power = 100
+			jumpStrength = 100
+		elif Input.is_action_just_pressed("move_right"):
+			direction = Vector3(1, 0, 0).rotated(Vector3.UP, $CameraArm.rotation.y)
+			power = 500
+			jumpStrength = 200
+		elif Input.is_action_just_pressed("move_left"):
+			direction = Vector3(-1, 0, 0).rotated(Vector3.UP, $CameraArm.rotation.y)
+			power = 500
+			jumpStrength = 200
+		
+		if direction:
+			velocity.x = direction.x *  power * delta
+			velocity.z = direction.z * power * delta
+			velocity.y = jumpStrength * delta
+			hasJumped = true
+			$Timer.start()
+		
 	move_and_slide()
 
 func _on_timer_timeout() -> void:
