@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd7j54flskbo6"]
+
+[ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/floor.tscn" id="1_w1ewk"]
+
+[node name="XShape" type="StaticBody3D"]
+
+[node name="Floor2" parent="." instance=ExtResource("1_w1ewk")]
+transform = Transform3D(1.79833, -0.000364616, -13.0969, 0.00321685, 0.258343, 0.00736355, 0.786428, -0.00022297, 29.9487, 0, 0, 0)
+
+[node name="Floor3" parent="." instance=ExtResource("1_w1ewk")]
+transform = Transform3D(-0.786428, 0.00022297, -29.9487, 0.00321685, 0.258343, 0.00736356, 1.79833, -0.000364616, -13.0969, 0, 0, 0)
