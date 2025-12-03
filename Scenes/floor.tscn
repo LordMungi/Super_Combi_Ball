@@ -1,10 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://5iu2qbwlqata"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ik5og"]
+[gd_scene format=3 uid="uid://5iu2qbwlqata"]
 
 [node name="Floor" type="StaticBody3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_ik5og")
+use_collision = true
+collision_mask = 2

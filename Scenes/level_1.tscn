@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx6y5d4an5e2f"]
+
+[ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/floor.tscn" id="1_vk57k"]
+[ext_resource type="PackedScene" uid="uid://588pjlekpvmq" path="res://Scenes/wall.tscn" id="2_8ffim"]
+
+[node name="Level1" type="Node3D"]
+
+[node name="Floor" parent="." instance=ExtResource("1_vk57k")]
+transform = Transform3D(24.2696, 0, 0, 0, 0.2502, 0, 0, 0, 25.2957, -0.385344, -13.5748, 1.29432)
+
+[node name="Wall" parent="." instance=ExtResource("2_8ffim")]
+transform = Transform3D(14.6747, 0, 0, 0, 18.6517, 0, 0, 0, 15.3933, -1.15078, -1.57947, 1.7724)
