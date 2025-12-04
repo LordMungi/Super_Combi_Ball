@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bki2dsl3nwa3g"]
+
+[ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/floor.tscn" id="1_tkjck"]
+
+[node name="SquareCross" type="StaticBody3D"]
+
+[node name="Floor" parent="." instance=ExtResource("1_tkjck")]
+transform = Transform3D(1, 0, 0, 0, 0.0414857, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="Floor2" parent="." instance=ExtResource("1_tkjck")]
+transform = Transform3D(1, 0, 0, 0, 0.0414857, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Floor3" parent="." instance=ExtResource("1_tkjck")]
+transform = Transform3D(1, 0, 0, 0, 0.0414857, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Floor4" parent="." instance=ExtResource("1_tkjck")]
+transform = Transform3D(1, 0, 0, 0, 0.0414857, 0, 0, 0, 1, 0, 0, -1)
