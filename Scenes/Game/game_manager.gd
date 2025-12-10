@@ -1,5 +1,7 @@
 extends Node3D
 
+signal game_won
+
 var player : CharacterBody3D
 var level : Node3D
 var spikes = []
@@ -21,5 +23,5 @@ func _on_player_hit() ->void:
 	print("golpeo")
 	
 func _on_player_won()->void:
-	##show que gano
+	emit_signal("game_won")
 	pass
