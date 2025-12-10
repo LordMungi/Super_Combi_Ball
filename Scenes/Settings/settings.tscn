@@ -49,3 +49,4 @@ popup/item_2/id = 2
 
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
 [connection signal="toggled" from="MarginContainer/VBoxContainer/Mute" to="." method="_on_mute_toggled"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]

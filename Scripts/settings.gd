@@ -22,4 +22,5 @@ func _on_mute_toggled(toggled_on: bool) -> void:
 
 
 func _on_resolutions_item_selected(index: int) -> void:
+	
 	pass # Replace with function body.
