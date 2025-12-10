@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bki2dsl3nwa3g"]
 
-[ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/floor.tscn" id="1_tkjck"]
+[ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/Game/floor.tscn" id="1_tkjck"]
 
 [node name="SquareCross" type="StaticBody3D"]
 

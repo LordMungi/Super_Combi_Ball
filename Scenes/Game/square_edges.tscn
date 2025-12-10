@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bt0vr7u3ixox1"]
 
-[ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/floor.tscn" id="1_hda75"]
+[ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/Game/floor.tscn" id="1_hda75"]
 
 [node name="SquareEdges" type="StaticBody3D"]
 
