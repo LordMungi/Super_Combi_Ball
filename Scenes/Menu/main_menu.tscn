@@ -22,6 +22,10 @@ script = ExtResource("1_bkwd7")
 layout_mode = 2
 text = "Play"
 
+[node name="Settings" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
 [node name="Credits" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Credits"
@@ -31,5 +35,6 @@ layout_mode = 2
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/Play" to="VBoxContainer" method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="VBoxContainer" method="_on_settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="VBoxContainer" method="_on_credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="VBoxContainer" method="_on_quit_pressed"]
