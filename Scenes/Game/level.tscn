@@ -92,3 +92,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.27856, 5.0098, 6.45384)
 
 [node name="16Spikes8" parent="CrossSpikes" instance=ExtResource("6_752co")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.27856, 5.00675, -2.42366)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14477, 24.026, 1.81498)
+light_energy = 2.263
+omni_range = 13.2802
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14477, 0.359503, 1.81498)
+light_energy = 2.263
+omni_range = 13.2802

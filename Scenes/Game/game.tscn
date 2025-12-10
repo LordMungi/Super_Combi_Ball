@@ -9,26 +9,6 @@
 [node name="Character" parent="." instance=ExtResource("2_wrm1d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22525, 33.3959, 1.17448)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.81034, 0.23492)
-light_energy = 2.293
-
 [node name="Level" parent="." instance=ExtResource("2_qxrlw")]
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11, 0)
-omni_range = 12.0
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 34.1829, 0)
-omni_range = 12.0
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.86506, 1.07951)
-omni_range = 12.0
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.12512, 1.07951)
-omni_range = 12.0
 
 [node name="GameManager" parent="." instance=ExtResource("3_qikps")]
