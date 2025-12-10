@@ -5,13 +5,13 @@
 [node name="SquareEdges" type="StaticBody3D"]
 
 [node name="Floor" parent="." instance=ExtResource("1_hda75")]
-transform = Transform3D(2.41892, 0, 0, 0, -0.0180746, 0, 0, 0, 2.28856, -2, 0, -2)
+transform = Transform3D(2.41892, 0, 0, 0, -0.0711073, 0, 0, 0, 2.28856, -2, -0.00910071, -2)
 
 [node name="Floor2" parent="." instance=ExtResource("1_hda75")]
-transform = Transform3D(2.41892, 0, 0, 0, -0.0180746, 0, 0, 0, 2.28856, 2, 0, 2)
+transform = Transform3D(2.41892, 0, 0, 0, -0.0711073, 0, 0, 0, 2.28856, 2, -0.00910071, 2)
 
 [node name="Floor3" parent="." instance=ExtResource("1_hda75")]
-transform = Transform3D(2.41892, 0, 0, 0, -0.0180746, 0, 0, 0, 2.28856, -2, 0, 2)
+transform = Transform3D(2.41892, 0, 0, 0, -0.0711073, 0, 0, 0, 2.28856, -2, -0.00910071, 2)
 
 [node name="Floor4" parent="." instance=ExtResource("1_hda75")]
-transform = Transform3D(2.41892, 0, 0, 0, -0.0180746, 0, 0, 0, 2.28856, 2.0339, 0.0124068, -2.02063)
+transform = Transform3D(2.41892, 0, 0, 0, -0.0711073, 0, 0, 0, 2.28856, 2.0339, 0.0397089, -2.02063)

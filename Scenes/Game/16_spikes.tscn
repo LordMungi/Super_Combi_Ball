@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://h8d3nkomdk1"]
+
+[ext_resource type="PackedScene" uid="uid://d3jcbbtay1rqp" path="res://Scenes/Game/4_spikes.tscn" id="1_akqnc"]
+
+[node name="16Spikes" type="Node3D"]
+
+[node name="4Spikes" parent="." instance=ExtResource("1_akqnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04066, 0.000849724, -1.07014)
+
+[node name="4Spikes2" parent="." instance=ExtResource("1_akqnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32687, 0.000849724, -1.07014)
+
+[node name="4Spikes3" parent="." instance=ExtResource("1_akqnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32687, 0.000849724, 1.27059)
+
+[node name="4Spikes4" parent="." instance=ExtResource("1_akqnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.03536, 0.000849724, 1.27059)

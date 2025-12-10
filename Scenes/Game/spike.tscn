@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=4 format=3 uid="uid://cjet1w5wmub5b"]
-=======
-[gd_scene load_steps=0 format=3 uid="uid://cjet1w5wmub5b"]
->>>>>>> refs/remotes/origin/master
+[gd_scene load_steps=4 format=3 uid="uid://dkgpmh6jq3stp"]
 
 [ext_resource type="Script" uid="uid://crkxn6kkerfr2" path="res://Scenes/Game/spike.gd" id="1_81d4w"]
 
@@ -14,6 +10,7 @@ height = 1.80762
 radius = 0.34082
 
 [node name="StaticBody3D" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.411204, 0, 0, 0, 1, 0, 0.418989, 0)
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_81d4w")

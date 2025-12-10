@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3jcbbtay1rqp"]
+
+[ext_resource type="PackedScene" uid="uid://dkgpmh6jq3stp" path="res://Scenes/Game/spike.tscn" id="1_otkcv"]
+
+[node name="4Spikes" type="Node3D"]
+
+[node name="Spíke1" parent="." instance=ExtResource("1_otkcv")]
+transform = Transform3D(1, 0, 0, 0, 0.411204, 0, 0, 0, 1, -0.743895, 0.418989, -0.748981)
+
+[node name="Spíke2" parent="." instance=ExtResource("1_otkcv")]
+transform = Transform3D(1, 0, 0, 0, 0.411204, 0, 0, 0, 1, 0.462287, 0.418989, -0.745327)
+
+[node name="Spíke3" parent="." instance=ExtResource("1_otkcv")]
+transform = Transform3D(1, 0, 0, 0, 0.411204, 0, 0, 0, 1, -0.751234, 0.418989, 0.455952)
+
+[node name="Spíke4" parent="." instance=ExtResource("1_otkcv")]
+transform = Transform3D(1, 0, 0, 0, 0.411204, 0, 0, 0, 1, 0.465184, 0.418989, 0.470881)
