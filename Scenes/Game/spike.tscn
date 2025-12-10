@@ -1,9 +1,31 @@
-[gd_scene format=3 uid="uid://cjet1w5wmub5b"]
+[gd_scene load_steps=4 format=3 uid="uid://cjet1w5wmub5b"]
 
-[node name="Spike" type="Node3D"]
+[ext_resource type="Script" uid="uid://crkxn6kkerfr2" path="res://Scenes/Game/spike.gd" id="1_81d4w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81d4w"]
+albedo_color = Color(1, 0.282353, 0, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_81d4w"]
+height = 1.80762
+radius = 0.34082
+
+[node name="StaticBody3D" type="StaticBody3D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_81d4w")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
-use_collision = true
 collision_layer = 4
 collision_mask = 2
 cone = true
+material = SubResource("StandardMaterial3D_81d4w")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0961914, 0)
+shape = SubResource("CylinderShape3D_81d4w")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

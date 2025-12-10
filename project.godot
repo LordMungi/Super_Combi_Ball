@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="Super Mooncheese Ball"
 
+[global_group]
+
+spikes=""
+
 [input]
 
 move_left={

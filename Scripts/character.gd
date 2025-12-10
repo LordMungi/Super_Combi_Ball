@@ -2,9 +2,16 @@ extends CharacterBody3D
 
 const AIR_RESISTANCE = 3
 
+var spawn : Marker3D
 var power = 600
 var jumpStrength = 500
-var hasJumped: bool
+var hasJumped: bool	
+var checkPoint : Vector3
+
+func _ready():
+	spawn = get_parent().get_node("Level").get_node("SpawnPosition")
+	global_position = spawn.global_position
+	checkPoint = spawn.global_position
 
 func _physics_process(delta: float) -> void:
 	

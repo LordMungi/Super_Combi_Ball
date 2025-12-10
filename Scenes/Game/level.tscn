@@ -1,12 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://cx6y5d4an5e2f"]
+[gd_scene load_steps=7 format=3 uid="uid://cx6y5d4an5e2f"]
 
 [ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/Game/floor.tscn" id="1_vk57k"]
 [ext_resource type="PackedScene" uid="uid://588pjlekpvmq" path="res://Scenes/Game/wall.tscn" id="2_8ffim"]
 [ext_resource type="PackedScene" uid="uid://dd7j54flskbo6" path="res://Scenes/Game/x_shape.tscn" id="3_xfk5q"]
 [ext_resource type="PackedScene" uid="uid://bt0vr7u3ixox1" path="res://Scenes/Game/square_edges.tscn" id="4_7p6j4"]
 [ext_resource type="PackedScene" uid="uid://bki2dsl3nwa3g" path="res://Scenes/Game/square_cross.tscn" id="5_6444e"]
+[ext_resource type="PackedScene" uid="uid://cjet1w5wmub5b" path="res://Scenes/Game/spike.tscn" id="6_k8d60"]
 
-[node name="Level1" type="Node3D"]
+[node name="Level" type="Node3D"]
 
 [node name="Floor" parent="." instance=ExtResource("1_vk57k")]
 transform = Transform3D(24.2696, 0, 0, 0, 0.2502, 0, 0, 0, 25.2957, -0.385344, -13.5748, 1.29432)
@@ -27,7 +28,10 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 
 transform = Transform3D(2.4, 0, 0, 0, 2.4, 0, 0, 0, 2.4, -1, 5, 1.91626)
 
 [node name="SpawnPosition" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.778183, 28.0672, 1.78647)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00865, 27.9794, 1.69156)
 
 [node name="SquareCross" parent="." instance=ExtResource("5_6444e")]
 transform = Transform3D(4.54, 0, 0, 0, 4.54, 0, 0, 0, 4.54, -1.11642, 13.2721, 1.93165)
+
+[node name="StaticBody3D" parent="." instance=ExtResource("6_k8d60")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.803032, 26.008, -3.07227)
