@@ -80,6 +80,9 @@ transform = Transform3D(4.85392, 0, 0, 0, 0.2502, 0, 0, 0, 5.05913, -1.13742, 79
 
 [node name="Obstacles" type="Node3D" parent="."]
 
+[node name="XShape3" parent="Obstacles" instance=ExtResource("3_xfk5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52251, 70.9118, 1.63824)
+
 [node name="Cross" parent="Obstacles" instance=ExtResource("3_xfk5q")]
 transform = Transform3D(0.707008, 0, -0.707205, 0, 1, 0, 0.707205, 0, 0.707008, -1.09213, 21.5574, 2.17466)
 
@@ -182,16 +185,43 @@ transform = Transform3D(0.220264, 0, 0, 0, 0.220264, 0, 0, 0, 0.220264, 0.001493
 transform = Transform3D(0.220264, 0, 0, 0, 0.220264, 0, 0, 0, 0.220264, 0.00149341, 0.0177753, -1.00145)
 
 [node name="Cross4" parent="Obstacles" instance=ExtResource("3_xfk5q")]
-transform = Transform3D(0.465028, 0, -0.885296, 0, 1, 0, 0.885296, 0, 0.465028, -1.09213, 47.765, 2.17466)
-
-[node name="4Spikes" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.38033, 0, 1, 0, 0.345933, 0, 0.815436, -2.30577, 0.117733, 5.47905)
-
-[node name="4Spikes2" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.38033, 0, 1, 0, 0.345933, 0, 0.815436, 5.39349, 0.123356, 2.48924)
-
-[node name="4Spikes3" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.38033, 0, 1, 0, 0.345933, 0, 0.815436, -6.28057, 0.123356, -2.63315)
+transform = Transform3D(-0.0099307, 0, -0.999951, 0, 1, 0, 0.999951, 0, -0.0099307, -1.09213, 52.2476, 2.17466)
 
 [node name="4Spikes4" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.38033, 0, 1, 0, 0.345933, 0, 0.815436, 2.46814, 0.123356, -5.33533)
+transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345933, 0, 0.815436, -0.821242, 0.123356, 2.07839)
+
+[node name="4Spikes9" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
+transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, -1.67749, 0.123356, 4.04244)
+
+[node name="4Spikes10" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
+transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, -1.7237, 0.123356, -0.61007)
+
+[node name="4Spikes11" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
+transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, -3.55217, 0.123356, -1.40049)
+
+[node name="4Spikes5" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
+transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345933, 0, 0.815436, 0.830205, 0.123356, -1.73946)
+
+[node name="4Spikes6" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
+transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, 1.6878, 0.123356, -3.61499)
+
+[node name="4Spikes7" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
+transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, 1.74816, 0.123356, 0.931551)
+
+[node name="4Spikes8" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
+transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, 3.55615, 0.123356, 1.77062)
+
+[node name="SquareEdges2" parent="Obstacles" instance=ExtResource("4_7p6j4")]
+transform = Transform3D(2.4, 0, 0, 0, 2.4, 0, 0, 0, 2.4, -1, 60.3215, 1.91626)
+
+[node name="16Spikes5" parent="Obstacles/SquareEdges2" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, 1.84919, 0.0217459, -1.888)
+
+[node name="16Spikes6" parent="Obstacles/SquareEdges2" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, 1.80085, -0.000208378, 1.89066)
+
+[node name="16Spikes7" parent="Obstacles/SquareEdges2" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, -1.78273, 0.0040834, 1.89066)
+
+[node name="16Spikes8" parent="Obstacles/SquareEdges2" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, -1.78273, 0.00281262, -1.8083)

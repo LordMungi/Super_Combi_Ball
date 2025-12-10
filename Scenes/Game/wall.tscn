@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://588pjlekpvmq"]
 
-[node name="Wall" type="StaticBody3D"]
+[node name="Wall" type="Node3D"]
 
 [node name="ExteriorDraw" type="CSGCylinder3D" parent="."]
 use_collision = true

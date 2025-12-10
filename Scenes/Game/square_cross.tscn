@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/Game/floor.tscn" id="1_tkjck"]
 
-[node name="SquareCross" type="StaticBody3D"]
+[node name="SquareCross" type="Node3D"]
 
 [node name="Floor" parent="." instance=ExtResource("1_tkjck")]
 transform = Transform3D(1, 0, 0, 0, 0.0414857, 0, 0, 0, 1, -1, 0, 0)

@@ -9,10 +9,8 @@ albedo_color = Color(1, 0.282353, 0, 1)
 height = 1.80762
 radius = 0.34082
 
-[node name="StaticBody3D" type="StaticBody3D"]
+[node name="Spike" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 0.411204, 0, 0, 0, 1, 0, 0.418989, 0)
-collision_layer = 4
-collision_mask = 2
 script = ExtResource("1_81d4w")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]

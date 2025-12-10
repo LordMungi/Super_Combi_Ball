@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5iu2qbwlqata"]
 
-[node name="Floor" type="StaticBody3D"]
+[node name="Floor" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 use_collision = true
