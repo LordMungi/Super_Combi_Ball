@@ -10,6 +10,18 @@
 
 [node name="Level" type="Node3D"]
 
+[node name="Cross" parent="." instance=ExtResource("3_xfk5q")]
+transform = Transform3D(0.707008, 0, -0.707205, 0, 1, 0, 0.707205, 0, 0.707008, -1.09213, 21.5574, 2.17466)
+
+[node name="Cross2" parent="." instance=ExtResource("3_xfk5q")]
+transform = Transform3D(0.465028, 0, -0.885296, 0, 1, 0, 0.885296, 0, 0.465028, -1.09213, 27.0677, 2.17466)
+
+[node name="Cross3" parent="." instance=ExtResource("3_xfk5q")]
+transform = Transform3D(-0.0099307, 0, -0.999951, 0, 1, 0, 0.999951, 0, -0.0099307, -1.09213, 31.7803, 2.17466)
+
+[node name="Cross4" parent="." instance=ExtResource("3_xfk5q")]
+transform = Transform3D(-0.0099307, 0, -0.999951, 0, 1, 0, 0.999951, 0, -0.0099307, -1.09213, 36.5158, 2.17466)
+
 [node name="Flag" parent="." instance=ExtResource("7_r6akh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.866285, -2.42693, 1.69699)
 
@@ -17,10 +29,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.866285, -2.42693, 1.69699)
 transform = Transform3D(24.2696, 0, 0, 0, 0.2502, 0, 0, 0, 25.2957, -0.385344, -13.5748, 1.29432)
 
 [node name="SquareCentered" parent="." instance=ExtResource("1_vk57k")]
-transform = Transform3D(4.85392, 0, 0, 0, 0.2502, 0, 0, 0, 5.05913, -1.13742, 24.4252, 1.97009)
+transform = Transform3D(4.85392, 0, 0, 0, 0.2502, 0, 0, 0, 5.05913, -1.13742, 44.4286, 1.97009)
 
 [node name="Wall" parent="." instance=ExtResource("2_8ffim")]
-transform = Transform3D(14.6747, 0, 0, 0, 48.4945, 0, 0, 0, 15.3933, -1.15078, -1.57947, 1.7724)
+transform = Transform3D(14.6747, 0, 0, 0, 113.363, 0, 0, 0, 15.3933, -1.15078, -1.57947, 1.7724)
 
 [node name="XShape" parent="." instance=ExtResource("3_xfk5q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78961, -3.08616, 1.49415)
@@ -31,23 +43,37 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 
 [node name="SquareEdges" parent="." instance=ExtResource("4_7p6j4")]
 transform = Transform3D(2.4, 0, 0, 0, 2.4, 0, 0, 0, 2.4, -1, 5, 1.91626)
 
+[node name="16Spikes5" parent="SquareEdges" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, 1.84919, 0.0217459, -1.888)
+
+[node name="16Spikes6" parent="SquareEdges" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, 1.80085, -0.000208378, 1.89066)
+
+[node name="16Spikes7" parent="SquareEdges" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, -1.78273, 0.0040834, 1.89066)
+
+[node name="16Spikes8" parent="SquareEdges" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, -1.78273, 0.00281262, -1.8083)
+
 [node name="SpawnPosition" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00865, 27.9794, 1.69156)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00865, 46.2757, 1.69156)
 
 [node name="SquareCross" parent="." instance=ExtResource("5_6444e")]
 transform = Transform3D(4.54, 0, 0, 0, 4.54, 0, 0, 0, 4.54, -1.11642, 13.2721, 1.93165)
 
-[node name="16Spikes" parent="." instance=ExtResource("6_752co")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.41628, 13.3528, 1.97536)
+[node name="16Spikes" parent="SquareCross" instance=ExtResource("6_752co")]
+transform = Transform3D(0.220264, 0, 0, 0, 0.220264, 0, 0, 0, 0.220264, 0.998392, 0.0177753, 0.00962776)
 
-[node name="16Spikes2" parent="." instance=ExtResource("6_752co")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.79996, 13.3528, 1.97536)
+[node name="16Spikes2" parent="SquareCross" instance=ExtResource("6_752co")]
+transform = Transform3D(0.220264, 0, 0, 0, 0.220264, 0, 0, 0, 0.220264, -1.03162, 0.0177753, 0.00962776)
 
-[node name="16Spikes3" parent="." instance=ExtResource("6_752co")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10964, 13.3528, 6.70035)
+[node name="16Spikes3" parent="SquareCross" instance=ExtResource("6_752co")]
+transform = Transform3D(0.220264, 0, 0, 0, 0.220264, 0, 0, 0, 0.220264, 0.00149341, 0.0177753, 1.05037)
 
-[node name="16Spikes4" parent="." instance=ExtResource("6_752co")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10964, 13.3528, -2.61494)
+[node name="16Spikes4" parent="SquareCross" instance=ExtResource("6_752co")]
+transform = Transform3D(0.220264, 0, 0, 0, 0.220264, 0, 0, 0, 0.220264, 0.00149341, 0.0177753, -1.00145)
+
+[node name="CrossSpikes" type="Node3D" parent="."]
 
 [node name="LowestFloor" type="Node3D" parent="."]
 
@@ -81,22 +107,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.96692, -13.3531, 1.72938)
 [node name="16Spikes18" parent="LowestFloor" instance=ExtResource("6_752co")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.96692, -13.3531, 6.47419)
 
-[node name="XSpikes" type="Node3D" parent="."]
-
-[node name="CrossSpikes" type="Node3D" parent="."]
-
-[node name="16Spikes5" parent="CrossSpikes" instance=ExtResource("6_752co")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.43806, 5.05219, -2.61494)
-
-[node name="16Spikes6" parent="CrossSpikes" instance=ExtResource("6_752co")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.32203, 4.9995, 6.45384)
-
-[node name="16Spikes7" parent="CrossSpikes" instance=ExtResource("6_752co")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.27856, 5.0098, 6.45384)
-
-[node name="16Spikes8" parent="CrossSpikes" instance=ExtResource("6_752co")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.27856, 5.00675, -2.42366)
-
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14477, 24.026, 1.81498)
 light_energy = 2.263
@@ -104,5 +114,10 @@ omni_range = 13.2802
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14477, 0.359503, 1.81498)
+light_energy = 2.263
+omni_range = 13.2802
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14477, 37.4829, 1.81498)
 light_energy = 2.263
 omni_range = 13.2802
