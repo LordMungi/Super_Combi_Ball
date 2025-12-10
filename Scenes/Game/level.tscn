@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cx6y5d4an5e2f"]
+[gd_scene load_steps=8 format=3 uid="uid://cx6y5d4an5e2f"]
 
 [ext_resource type="PackedScene" uid="uid://5iu2qbwlqata" path="res://Scenes/Game/floor.tscn" id="1_vk57k"]
 [ext_resource type="PackedScene" uid="uid://588pjlekpvmq" path="res://Scenes/Game/wall.tscn" id="2_8ffim"]
@@ -6,8 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://bt0vr7u3ixox1" path="res://Scenes/Game/square_edges.tscn" id="4_7p6j4"]
 [ext_resource type="PackedScene" uid="uid://bki2dsl3nwa3g" path="res://Scenes/Game/square_cross.tscn" id="5_6444e"]
 [ext_resource type="PackedScene" uid="uid://h8d3nkomdk1" path="res://Scenes/Game/16_spikes.tscn" id="6_752co"]
+[ext_resource type="PackedScene" uid="uid://c8a3g03p0fs0r" path="res://Scenes/Game/flag.tscn" id="7_r6akh"]
 
 [node name="Level" type="Node3D"]
+
+[node name="Flag" parent="." instance=ExtResource("7_r6akh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.866285, -2.42693, 1.69699)
 
 [node name="Floor" parent="." instance=ExtResource("1_vk57k")]
 transform = Transform3D(24.2696, 0, 0, 0, 0.2502, 0, 0, 0, 25.2957, -0.385344, -13.5748, 1.29432)
