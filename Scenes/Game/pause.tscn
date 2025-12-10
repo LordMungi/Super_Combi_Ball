@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://ct0xfqpuvle2v"]
+[gd_scene load_steps=2 format=3 uid="uid://ct0xfqpuvle2v"]
+
+[ext_resource type="Script" uid="uid://b5gecnnm3q77s" path="res://Scenes/Game/pausebuttons.gd" id="1_q8pn1"]
 
 [node name="Pause" type="Control"]
 layout_mode = 3
@@ -22,11 +24,15 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_vertical = 4
 size_flags_stretch_ratio = 0.0
+script = ExtResource("1_q8pn1")
 
-[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Play"
 
-[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Menu" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Back to menu"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="MarginContainer/VBoxContainer" method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Menu" to="MarginContainer/VBoxContainer" method="_on_menu_pressed"]
