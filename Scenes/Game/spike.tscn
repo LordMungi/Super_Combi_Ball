@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cjet1w5wmub5b"]
+
+[node name="Spike" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+use_collision = true
+collision_layer = 4
+collision_mask = 2
+cone = true
