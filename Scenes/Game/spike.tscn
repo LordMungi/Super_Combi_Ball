@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cjet1w5wmub5b"]
+[gd_scene load_steps=0 format=3 uid="uid://cjet1w5wmub5b"]
 
 [node name="Spike" type="Node3D"]
 
