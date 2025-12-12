@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://dvd21sspfw7ul"]
 
-[ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_i1e5p"]
+[ext_resource type="Script" uid="uid://blsotqnhw7rj" path="res://Scenes/Game/game.gd" id="1_i1e5p"]
 [ext_resource type="PackedScene" uid="uid://cx6y5d4an5e2f" path="res://Scenes/Game/level.tscn" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://2n5cdnnv84e" path="res://Scenes/Game/character.tscn" id="2_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://b68c5pkgpdvgv" path="res://Scenes/Game/game_manager.tscn" id="3_qikps"]
-[ext_resource type="PackedScene" path="res://Scenes/Game/pause.tscn" id="5_ciybh"]
-[ext_resource type="Script" path="res://Scenes/Game/pause.gd" id="6_flgk0"]
+[ext_resource type="PackedScene" uid="uid://ct0xfqpuvle2v" path="res://Scenes/Game/pause.tscn" id="5_ciybh"]
+[ext_resource type="Script" uid="uid://cjh5cc0mljpy7" path="res://Scenes/Game/pause.gd" id="6_flgk0"]
 
 [node name="Node3D" type="Node3D"]
 process_mode = 3

@@ -1,13 +1,17 @@
-[gd_scene format=3 uid="uid://588pjlekpvmq"]
+[gd_scene load_steps=2 format=3 uid="uid://588pjlekpvmq"]
+
+[ext_resource type="Material" uid="uid://bvns166pww8ct" path="res://Assets/Resources/wall.tres" id="1_bng42"]
 
 [node name="Wall" type="Node3D"]
 
 [node name="ExteriorDraw" type="CSGCylinder3D" parent="."]
 use_collision = true
 collision_mask = 2
+material = ExtResource("1_bng42")
 
 [node name="InteriorDraw" type="CSGCylinder3D" parent="ExteriorDraw"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0216064, 0)
 operation = 2
 radius = 0.482422
 height = 2.11841
+material = ExtResource("1_bng42")

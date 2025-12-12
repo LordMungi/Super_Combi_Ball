@@ -20,7 +20,6 @@ func _ready() -> void:
 func _on_player_hit() ->void:
 	player.global_position = player.checkPoint
 	player.velocity = Vector3.ZERO
-	print("golpeo")
 	
 func _on_player_won()->void:
 	emit_signal("game_won")

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bvns166pww8ct"]
+
+[ext_resource type="Texture2D" uid="uid://b0mjxij2pgba4" path="res://Assets/Textures/water.png" id="1_l0xbd"]
+
+[resource]
+albedo_color = Color(0.489622, 0.489622, 0.489622, 1)
+albedo_texture = ExtResource("1_l0xbd")
+uv1_scale = Vector3(34.945, 34.945, 34.945)
