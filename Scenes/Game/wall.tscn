@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://588pjlekpvmq"]
 
-[ext_resource type="Material" uid="uid://bvns166pww8ct" path="res://Assets/Resources/wall.tres" id="1_bng42"]
+[ext_resource type="Material" uid="uid://dcthffgc1uxgi" path="res://Assets/Resources/wall.tres" id="1_bng42"]
 
 [node name="Wall" type="Node3D"]
 

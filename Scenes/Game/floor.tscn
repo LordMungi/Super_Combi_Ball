@@ -1,7 +1,10 @@
-[gd_scene format=3 uid="uid://5iu2qbwlqata"]
+[gd_scene load_steps=2 format=3 uid="uid://5iu2qbwlqata"]
+
+[ext_resource type="Material" uid="uid://dcthffgc1uxgi" path="res://Assets/Resources/wall.tres" id="1_r0eem"]
 
 [node name="Floor" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 use_collision = true
 collision_mask = 2
+material = ExtResource("1_r0eem")

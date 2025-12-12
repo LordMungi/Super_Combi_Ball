@@ -1,9 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dkgpmh6jq3stp"]
 
 [ext_resource type="Script" uid="uid://crkxn6kkerfr2" path="res://Scenes/Game/spike.gd" id="1_81d4w"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81d4w"]
-albedo_color = Color(1, 0.282353, 0, 1)
+[ext_resource type="Material" uid="uid://y1v8jbyw31vi" path="res://Assets/Resources/spike.tres" id="2_n4qjw"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_81d4w"]
 height = 1.80762
@@ -17,7 +15,7 @@ script = ExtResource("1_81d4w")
 collision_layer = 4
 collision_mask = 2
 cone = true
-material = SubResource("StandardMaterial3D_81d4w")
+material = ExtResource("2_n4qjw")
 
 [node name="Area3D" type="Area3D" parent="."]
 collision_layer = 4
