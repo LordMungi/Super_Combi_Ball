@@ -97,5 +97,5 @@ transform = Transform3D(0.635, 0, 0, 0, 0.635, 0, 0, 0, 0.635, 0, 0, 0)
 [node name="globalGlow" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.19814, 0)
 layers = 2
-light_color = Color(1, 1, 0.176471, 1)
+light_color = Color(1, 0.0876744, 0.0863897, 1)
 omni_range = 14.6365
