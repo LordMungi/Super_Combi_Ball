@@ -1,3 +1,101 @@
-[gd_scene format=3 uid="uid://cgk261pqsiuxi"]
+[gd_scene load_steps=2 format=3 uid="uid://cgk261pqsiuxi"]
+
+[ext_resource type="PackedScene" uid="uid://5alwquac3sht" path="res://Assets/Models/Light/light.glb" id="1_yixjr"]
 
 [node name="Light" type="Node3D"]
+
+[node name="glowEffect" type="Node3D" parent="."]
+transform = Transform3D(0.635, 0, 0, 0, 0.635, 0, 0, 0, 0.635, 0, 0, 0)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="glowEffect"]
+transform = Transform3D(1.69183, 0, 0, 0, 1.69183, 0, 0, 0, 1.69183, 0.586025, 1.20128, -0.000939965)
+light_color = Color(1, 1, 0.32549, 1)
+light_energy = 16.0
+light_specular = 0.0
+light_cull_mask = 4294966273
+shadow_bias = 4.242
+shadow_normal_bias = 0.0
+shadow_reverse_cull_face = true
+omni_range = 0.404416
+omni_attenuation = 10.0
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="glowEffect"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.311462, 1.20128, -0.451401)
+light_color = Color(1, 1, 0.32549, 1)
+light_energy = 16.0
+light_specular = 0.0
+light_cull_mask = 4294966273
+shadow_bias = 4.242
+shadow_normal_bias = 0.0
+shadow_reverse_cull_face = true
+omni_range = 0.404
+omni_attenuation = 10.0
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="glowEffect"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.264045, 1.20128, -0.451401)
+light_color = Color(1, 1, 0.32549, 1)
+light_energy = 16.0
+light_specular = 0.0
+light_cull_mask = 4294966273
+shadow_bias = 4.242
+shadow_normal_bias = 0.0
+shadow_reverse_cull_face = true
+omni_range = 0.404
+omni_attenuation = 10.0
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="glowEffect"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.589977, 1.20128, -0.0202225)
+light_color = Color(1, 1, 0.32549, 1)
+light_energy = 16.0
+light_specular = 0.0
+light_cull_mask = 4294966273
+shadow_bias = 4.242
+shadow_normal_bias = 0.0
+shadow_reverse_cull_face = true
+omni_range = 0.404
+omni_attenuation = 10.0
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="glowEffect"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.366739, 1.20128, 0.421674)
+light_color = Color(1, 1, 0.32549, 1)
+light_energy = 16.0
+light_specular = 0.0
+light_cull_mask = 4294966273
+shadow_bias = 4.242
+shadow_normal_bias = 0.0
+shadow_reverse_cull_face = true
+omni_range = 0.404
+omni_attenuation = 10.0
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="glowEffect"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0331018, 1.20128, 0.471808)
+light_color = Color(1, 1, 0.32549, 1)
+light_energy = 16.0
+light_specular = 0.0
+light_cull_mask = 4294966273
+shadow_bias = 4.242
+shadow_normal_bias = 0.0
+shadow_reverse_cull_face = true
+omni_range = 0.404
+omni_attenuation = 10.0
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="glowEffect"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.325999, 1.20128, 0.384803)
+light_color = Color(1, 1, 0.32549, 1)
+light_energy = 16.0
+light_specular = 0.0
+light_cull_mask = 4294966273
+shadow_bias = 4.242
+shadow_normal_bias = 0.0
+shadow_reverse_cull_face = true
+omni_range = 0.404
+omni_attenuation = 10.0
+
+[node name="model" parent="." instance=ExtResource("1_yixjr")]
+transform = Transform3D(0.635, 0, 0, 0, 0.635, 0, 0, 0, 0.635, 0, 0, 0)
+
+[node name="globalGlow" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.19814, 0)
+layers = 2
+light_color = Color(1, 1, 0.176471, 1)
+omni_range = 14.6365
