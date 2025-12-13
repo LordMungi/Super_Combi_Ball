@@ -127,32 +127,20 @@ transform = Transform3D(0.741687, 0, -0.38033, 0, 1, 0, 0.345933, 0, 0.815436, -
 [node name="4Spikes4" parent="Obstacles/Cross2" instance=ExtResource("6_uj4gc")]
 transform = Transform3D(0.741687, 0, -0.38033, 0, 1, 0, 0.345933, 0, 0.815436, 2.46814, 0.123356, -5.33533)
 
-[node name="Cross4" parent="Obstacles" instance=ExtResource("3_xfk5q")]
-transform = Transform3D(-0.0099307, 0, -0.999951, 0, 1, 0, 0.999951, 0, -0.0099307, -1.092, 45, 2.175)
+[node name="SquareEdges3" parent="Obstacles" instance=ExtResource("4_7p6j4")]
+transform = Transform3D(2.26749, 0, -0.786431, 0, 2.4, 0, 0.786431, 0, 2.26749, -1, 45, 1.916)
 
-[node name="4Spikes4" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345933, 0, 0.815436, -0.821242, 0.123356, 2.07839)
+[node name="16Spikes5" parent="Obstacles/SquareEdges3" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, 1.84919, 0.0217459, -1.888)
 
-[node name="4Spikes9" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, -1.67749, 0.123356, 4.04244)
+[node name="16Spikes6" parent="Obstacles/SquareEdges3" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, 1.80085, -0.000208378, 1.89066)
 
-[node name="4Spikes10" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, -1.7237, 0.123356, -0.61007)
+[node name="16Spikes7" parent="Obstacles/SquareEdges3" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, -1.78273, 0.0040834, 1.89066)
 
-[node name="4Spikes11" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, -3.55217, 0.123356, -1.40049)
-
-[node name="4Spikes5" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345933, 0, 0.815436, 0.830205, 0.123356, -1.73946)
-
-[node name="4Spikes6" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, 1.6878, 0.123356, -3.61499)
-
-[node name="4Spikes7" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, 1.74816, 0.123356, 0.931551)
-
-[node name="4Spikes8" parent="Obstacles/Cross4" instance=ExtResource("6_uj4gc")]
-transform = Transform3D(0.741687, 0, -0.380331, 0, 1, 0, 0.345934, 0, 0.815437, 3.55615, 0.123356, 1.77062)
+[node name="16Spikes8" parent="Obstacles/SquareEdges3" instance=ExtResource("6_752co")]
+transform = Transform3D(0.416667, 0, 0, 0, 0.416667, 0, 0, 0, 0.416667, -1.78273, 0.00281262, -1.8083)
 
 [node name="SquareCross2" parent="Obstacles" instance=ExtResource("5_6444e")]
 transform = Transform3D(4.27422, 0, -1.53056, 0, 4.54, 0, 1.53056, 0, 4.27422, -1.116, 55, 1.932)
