@@ -65,8 +65,8 @@ transform = Transform3D(7.16, 0, 0, 0, -4.54861e-07, -7.018, 0, 10.406, -3.06767
 [node name="SpawnPosition" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00865, 93.8058, 1.69156)
 
-[node name="SquareCentered" parent="." instance=ExtResource("1_vk57k")]
-transform = Transform3D(4.85392, 0, 0, 0, 0.2502, 0, 0, 0, 5.05913, -1.13742, 91.7492, 1.97009)
+[node name="InitialFloor" parent="." instance=ExtResource("1_vk57k")]
+transform = Transform3D(4.54326, 0, -1.78084, 0, 0.2502, 0, 1.7086, 0, 4.73534, -1.45756, 91.7492, 1.97009)
 
 [node name="Obstacles" type="Node3D" parent="."]
 
