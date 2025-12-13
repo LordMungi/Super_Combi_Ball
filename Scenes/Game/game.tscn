@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dvd21sspfw7ul"]
+[gd_scene load_steps=8 format=3 uid="uid://dvd21sspfw7ul"]
 
 [ext_resource type="Script" uid="uid://blsotqnhw7rj" path="res://Scenes/Game/game.gd" id="1_i1e5p"]
 [ext_resource type="PackedScene" uid="uid://cx6y5d4an5e2f" path="res://Scenes/Game/level.tscn" id="2_qxrlw"]
@@ -6,21 +6,29 @@
 [ext_resource type="PackedScene" uid="uid://b68c5pkgpdvgv" path="res://Scenes/Game/game_manager.tscn" id="3_qikps"]
 [ext_resource type="PackedScene" uid="uid://ct0xfqpuvle2v" path="res://Scenes/Game/pause.tscn" id="5_ciybh"]
 [ext_resource type="Script" uid="uid://cjh5cc0mljpy7" path="res://Scenes/Game/pause.gd" id="6_flgk0"]
+[ext_resource type="AudioStream" uid="uid://cfrro7qcpdpe0" path="res://Assets/Sound/Music/suspense.wav" id="7_vifcx"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Game" type="Node3D"]
 process_mode = 3
 script = ExtResource("1_i1e5p")
 
-[node name="pausables" type="Node3D" parent="."]
+[node name="Pausables" type="Node3D" parent="."]
 process_mode = 1
 
-[node name="Character" parent="pausables" instance=ExtResource("2_wrm1d")]
+[node name="Character" parent="Pausables" instance=ExtResource("2_wrm1d")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22525, 33.3959, 1.17448)
 
-[node name="Level" parent="pausables" instance=ExtResource("2_qxrlw")]
+[node name="Level" parent="Pausables" instance=ExtResource("2_qxrlw")]
+unique_name_in_owner = true
 
-[node name="GameManager" parent="pausables" instance=ExtResource("3_qikps")]
+[node name="GameManager" parent="Pausables" instance=ExtResource("3_qikps")]
 
 [node name="Pause" parent="." instance=ExtResource("5_ciybh")]
 process_mode = 3
 script = ExtResource("6_flgk0")
+
+[node name="SuspenseMusic" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("7_vifcx")
+autoplay = true

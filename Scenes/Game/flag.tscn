@@ -1,21 +1,25 @@
 [gd_scene load_steps=4 format=3 uid="uid://c8a3g03p0fs0r"]
 
 [ext_resource type="Script" uid="uid://cp31fg3rqijfw" path="res://Scenes/Game/flag.gd" id="1_lyyk5"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpl2x"]
-albedo_color = Color(0.675384, 0.50771, 0.0825786, 1)
+[ext_resource type="PackedScene" uid="uid://d1d78mauhp434" path="res://Assets/Models/Cheese/cheese.glb" id="2_hlk3a"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rpl2x"]
+size = Vector3(0.355469, 0.382935, 0.168213)
 
 [node name="Flag" type="Area3D"]
 collision_layer = 8
 collision_mask = 2
 script = ExtResource("1_lyyk5")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-material = SubResource("StandardMaterial3D_rpl2x")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000697657, 0.156681, 0.000807345)
 shape = SubResource("BoxShape3D_rpl2x")
 
+[node name="cheese2" parent="." instance=ExtResource("2_hlk3a")]
+
+[node name="cheese" parent="cheese2" index="0"]
+layers = 2
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+
+[editable path="cheese2"]
