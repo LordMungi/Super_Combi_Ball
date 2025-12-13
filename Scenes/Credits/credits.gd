@@ -14,6 +14,9 @@ func _ready() -> void:
 	pass 
 
 func _process(delta: float) -> void:
+	if Input.is_key_pressed(KEY_ESCAPE):
+		get_tree().change_scene_to_file("res://Scenes/Menu/main_menu.tscn")
+		
 	for i in modelsLinks.size():
 		if modelsList.is_selected(i):
 			modelsList.deselect(i)
@@ -31,4 +34,5 @@ func _process(delta: float) -> void:
 	
 func goToReferredLink(link):
 	OS.shell_open(link)
+	
 	pass
