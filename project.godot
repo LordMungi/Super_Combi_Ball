@@ -13,7 +13,6 @@ config_version=5
 config/name="Super Mooncheese Ball"
 run/main_scene="uid://blwe322vnr35i"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [display]
 
@@ -23,6 +22,10 @@ window/size/viewport_height=720
 [dotnet]
 
 project/assembly_name="Super Mooncheese Ball"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [global_group]
 
