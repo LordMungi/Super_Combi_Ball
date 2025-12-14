@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://boryrh30rk76d"]
+
+[ext_resource type="Script" uid="uid://8qv2amn5n0jm" path="res://Scripts/camera_arm.gd" id="2_ushfy"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ushfy"]
+
+[node name="Character" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.00185, 0, 0, 0, 1.00185, 0, 0, 0, 1.00185, 0, 0, 0)
+shape = SubResource("SphereShape3D_ushfy")
+
+[node name="CameraArm" type="SpringArm3D" parent="."]
+spring_length = 6.0
+script = ExtResource("2_ushfy")
+
+[node name="Camera3D" type="Camera3D" parent="CameraArm"]
+current = true
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

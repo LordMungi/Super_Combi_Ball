@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cx52so3o8g216"]
+
+[node name="Floor" type="StaticBody3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+collision_mask = 2

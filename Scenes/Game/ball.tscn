@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://8xd2b6xajg3n"]
+
+[ext_resource type="Script" uid="uid://b6vljt172wvi8" path="res://ball.gd" id="1_6y6p4"]
+[ext_resource type="Script" uid="uid://8qv2amn5n0jm" path="res://Scripts/camera_arm.gd" id="2_tenq5"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1opnh"]
+
+[node name="Ball" type="RigidBody3D"]
+script = ExtResource("1_6y6p4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.00185, 0, 0, 0, 1.00185, 0, 0, 0, 1.00185, 0, 0, 0)
+shape = SubResource("SphereShape3D_1opnh")
+
+[node name="CameraArm" type="SpringArm3D" parent="."]
+spring_length = 6.0
+script = ExtResource("2_tenq5")
+
+[node name="Camera3D" type="Camera3D" parent="CameraArm"]
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
