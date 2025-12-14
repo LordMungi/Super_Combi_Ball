@@ -25,6 +25,8 @@ func _on_player_hit() ->void:
 	
 func _on_player_won()->void:
 	emit_signal("game_won")
+	get_tree().change_scene_to_file("res://Scenes/Game/win_sceen.tscn")
+
 	
 func _loopAudio(audio) -> void:
 	if audio:

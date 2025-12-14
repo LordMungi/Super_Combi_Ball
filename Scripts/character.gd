@@ -13,6 +13,9 @@ var checkPoint : Vector3
 
 func _ready():
 	spawn = get_parent().get_node("Level").get_node("SpawnPosition")
+	velocity.x = 0
+	velocity.y = 0
+	velocity.z = 0
 	global_position = spawn.global_position
 	checkPoint = spawn.global_position
 
