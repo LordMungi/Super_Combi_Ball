@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://2n5cdnnv84e"]
+[gd_scene load_steps=6 format=3 uid="uid://2n5cdnnv84e"]
 
 [ext_resource type="Script" uid="uid://byj0lfat48aiv" path="res://Scripts/character.gd" id="1_lkv7d"]
 [ext_resource type="Script" uid="uid://8qv2amn5n0jm" path="res://Scripts/camera_arm.gd" id="2_ushfy"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ushfy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kgt1h"]
+metallic = 0.76
+metallic_specular = 0.46
+roughness = 0.31
 
 [sub_resource type="ORMMaterial3D" id="ORMMaterial3D_kgt1h"]
 transparency = 1
@@ -25,16 +30,14 @@ script = ExtResource("2_ushfy")
 [node name="Camera3D" type="Camera3D" parent="CameraArm"]
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(1.00223, 0, 0, 0, 1.00223, 0, 0, 0, 1.00223, 0, 0, 0)
+material = SubResource("StandardMaterial3D_kgt1h")
 
 [node name="GravShield" type="CSGSphere3D" parent="."]
 transform = Transform3D(1.2298, 0, 0, 0, 1.2298, 0, 0, 0, 1.2298, 0, 0, 0)
+visible = false
 calculate_tangents = false
 material = SubResource("ORMMaterial3D_kgt1h")
-
-[node name="OmniLight3D" type="OmniLight3D" parent="GravShield"]
-light_color = Color(1, 0.188235, 0.113725, 1)
-light_energy = 0.3
-light_volumetric_fog_energy = 0.838
 
 [node name="Timer" type="Timer" parent="."]
 
