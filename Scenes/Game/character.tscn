@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://2n5cdnnv84e"]
+[gd_scene load_steps=9 format=3 uid="uid://2n5cdnnv84e"]
 
 [ext_resource type="Script" uid="uid://byj0lfat48aiv" path="res://Scripts/character.gd" id="1_lkv7d"]
 [ext_resource type="Script" uid="uid://8qv2amn5n0jm" path="res://Scripts/camera_arm.gd" id="2_ushfy"]
+[ext_resource type="Texture2D" uid="uid://cmpsahj0vex6i" path="res://Assets/Textures/lightred.png" id="3_b5jkb"]
+[ext_resource type="Texture2D" uid="uid://dv86poncocevu" path="res://Assets/Textures/lightgreen.png" id="4_f0q44"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ushfy"]
 
@@ -14,6 +16,25 @@ roughness = 0.31
 transparency = 1
 blend_mode = 1
 albedo_color = Color(0.872424, 0.998895, 0.957262, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v14dx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_b5jkb")
+}],
+"loop": true,
+"name": &"OFF",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_f0q44")
+}],
+"loop": true,
+"name": &"ON",
+"speed": 5.0
+}]
 
 [node name="Character" type="CharacterBody3D"]
 collision_layer = 2
@@ -40,5 +61,13 @@ calculate_tangents = false
 material = SubResource("ORMMaterial3D_kgt1h")
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="UI" type="Node" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="UI"]
+position = Vector2(98, 628)
+scale = Vector2(0.276764, 0.276764)
+sprite_frames = SubResource("SpriteFrames_v14dx")
+animation = &"ON"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

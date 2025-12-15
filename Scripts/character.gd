@@ -61,6 +61,10 @@ func _physics_process(delta: float) -> void:
 		isGravityOn = not isGravityOn
 		
 	$GravShield.visible = not isGravityOn
+	if hasJumped:
+		$UI/AnimatedSprite2D.animation = "OFF"
+	else:
+		$UI/AnimatedSprite2D.animation = "ON"
 		
 	move_and_slide()
 
