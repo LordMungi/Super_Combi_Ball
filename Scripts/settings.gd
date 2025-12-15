@@ -33,3 +33,6 @@ func _on_check_box_toggled(toggled_on: bool) -> void:
 	else:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 	pass 
+
+func _on_exit_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Menu/main_menu.tscn")

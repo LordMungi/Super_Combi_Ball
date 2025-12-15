@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://fkq82nmen567"]
+[gd_scene load_steps=3 format=3 uid="uid://fkq82nmen567"]
 
 [ext_resource type="Script" uid="uid://brxq8i5aovou" path="res://Scenes/Game/win_sceen.gd" id="1_wfrw8"]
+[ext_resource type="Theme" uid="uid://cvrhcgfflxe2b" path="res://Scenes/Menu/theme.tres" id="2_4kats"]
 
 [node name="WinSceen" type="Control"]
 layout_mode = 3
@@ -23,6 +24,7 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_vertical = 4
 size_flags_stretch_ratio = 0.0
+theme = ExtResource("2_4kats")
 
 [node name="Restart" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

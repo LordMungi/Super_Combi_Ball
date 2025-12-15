@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://blwe322vnr35i"]
+[gd_scene load_steps=4 format=3 uid="uid://blwe322vnr35i"]
 
+[ext_resource type="Theme" uid="uid://cvrhcgfflxe2b" path="res://Scenes/Menu/theme.tres" id="1_7jtkx"]
 [ext_resource type="Script" uid="uid://dtvkpr33p8xjt" path="res://Scripts/v_box_container.gd" id="1_bkwd7"]
+[ext_resource type="Texture2D" uid="uid://tg6h8owam3xb" path="res://Assets/Textures/title.png" id="2_tself"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -15,11 +17,12 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 382.0
+offset_left = 573.0
 offset_top = 285.0
-offset_right = -364.0
+offset_right = -555.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_7jtkx")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -29,6 +32,7 @@ script = ExtResource("1_bkwd7")
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("1_7jtkx")
 text = "Play"
 
 [node name="Settings" type="Button" parent="MarginContainer/VBoxContainer"]
@@ -42,6 +46,11 @@ text = "Credits"
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(651, 245)
+scale = Vector2(0.789474, 0.789474)
+texture = ExtResource("2_tself")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="MarginContainer/VBoxContainer" method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Settings" to="MarginContainer/VBoxContainer" method="_on_settings_pressed"]

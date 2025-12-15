@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://ct0xfqpuvle2v"]
+[gd_scene load_steps=3 format=3 uid="uid://ct0xfqpuvle2v"]
 
+[ext_resource type="Theme" uid="uid://cvrhcgfflxe2b" path="res://Scenes/Menu/theme.tres" id="1_6lwb4"]
 [ext_resource type="Script" uid="uid://b5gecnnm3q77s" path="res://Scenes/Game/pausebuttons.gd" id="1_q8pn1"]
 
 [node name="Pause" type="Control"]
@@ -15,10 +16,11 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 374.0
-offset_right = -378.0
+offset_left = 518.0
+offset_right = -522.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_6lwb4")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
