@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://blwe322vnr35i"]
+[gd_scene load_steps=5 format=3 uid="uid://blwe322vnr35i"]
 
 [ext_resource type="Theme" uid="uid://cvrhcgfflxe2b" path="res://Scenes/Menu/theme.tres" id="1_7jtkx"]
 [ext_resource type="Script" uid="uid://dtvkpr33p8xjt" path="res://Scripts/v_box_container.gd" id="1_bkwd7"]
+[ext_resource type="Texture2D" uid="uid://b41gf3x1ui4mp" path="res://Assets/Textures/wall.png" id="1_vmek6"]
 [ext_resource type="Texture2D" uid="uid://tg6h8owam3xb" path="res://Assets/Textures/title.png" id="2_tself"]
 
 [node name="Control" type="Control"]
@@ -11,6 +12,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.33091, 0.375921, 0.426829, 1)
+layout_mode = 0
+offset_left = -57.0
+offset_top = -33.0
+offset_right = 1336.0
+offset_bottom = 749.0
+texture = ExtResource("1_vmek6")
+stretch_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
